@@ -1,0 +1,211 @@
+/* Large devices (laptops/desktops, 992px and up) */
+
+/* For Desktop */
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.dotted-hr{
+    width: 5%;
+}
+/* header area Start */
+#header-area{
+    flex-direction: row;
+    padding: 25px 120px;
+    justify-content: start;
+    align-items: center;
+}
+#header-area .logo{
+    text-align: left;
+}
+#header-area .logo img{
+    margin-top: 3px;
+    width: 80px;
+}
+#header-area .title h1{
+    margin: 0;
+    text-align: right;
+
+}
+#header-area #nav-menu{
+    display: flex;
+    flex-direction:row;
+    justify-content: end;
+    margin: 0;
+}
+#header-area #nav-menu ul{
+    display: flex;
+    flex-direction: row;
+}
+#header-area #nav-menu ul li a{
+    display: inline-block;
+    background: transparent;
+    padding: 15px 10px;
+    margin: 0 10px;
+}
+
+/* header area End */
+
+/* main content Start */
+/* hero section Start */
+#main-content #hero p{
+    width: 55%;
+    margin: 40px auto 0;
+    font-size: 1.2rem;
+}
+
+#main-content #hero .weather-top img{
+    right: 100px;
+}
+
+#main-content #hero .weather-bottom img{
+    left: 100px;
+}
+/* hero section End */
+
+/* about me section Start */
+
+.about-me-content{
+    display: flex;
+    flex-direction: row;
+}
+#about-me .about-me-left img {
+    width: 240px;
+    height: 240px;
+    margin-top: 100px;
+}
+#about-me .about-me-right{
+    text-align: left;
+}
+/* about me section End */
+
+/* experience section Start */
+#experience{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+#experience .card{
+    flex-basis: 28%;
+    margin: 0;
+}
+/* experience section End */
+
+
+/* ===============================
+   Accessibility Section
+================================ */
+
+#accessibility {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 32px 24px;
+  background-color: #f9fafb;
+  border-left: 6px solid #356d72;
+  border-radius: 12px;
+}
+
+#accessibility h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  color: #1f2933;
+}
+
+#accessibility p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #374151;
+  margin-bottom: 16px;
+}
+
+#accessibility ul {
+  margin: 24px 0;
+  padding-left: 20px;
+}
+
+#accessibility li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #1f2933;
+  position: relative;
+}
+
+/* Custom accessible bullet */
+#accessibility li::marker {
+  color: #356d72;
+  font-weight: bold;
+}
+
+/* Focus-visible support */
+#accessibility a:focus-visible,
+#accessibility button:focus-visible {
+  outline: 3px solid #ffcc00;
+  outline-offset: 3px;
+}
+
+
+/* achievements contact section Start */
+#achievements-contact{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 50px 80px;
+}
+#achievements-contact .dotted-hr{
+    width: 10%;
+    margin: 35px auto;
+}
+#achievements-contact .achievements{
+    /* width: 85%; */
+    margin: 0;
+    padding: 0 50px 0;
+}
+#achievements-contact .contact {
+    padding: 0;
+    margin: 0;
+}
+#achievements-contact .contact p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+#achievements-contact .social-links .media-icon{
+    width: 40%;
+    margin: auto;
+}
+/* achievements contact section End */
+/* main content End */
+
+/* footer area Start */
+#footer-area {
+    display: flex;
+    flex-direction: row;
+}
+#footer-area .nav-menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#footer-area .nav-menu ul li a{
+    display: inline-block;
+    padding: 10px 20px 5px;
+}
+
+#footer-area .copyright p {
+    margin-top: 10px;
+}
+/* footer area End */

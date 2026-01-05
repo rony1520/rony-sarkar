@@ -1,115 +1,538 @@
-* {
-  margin: 0;
-  padding: 0;
+:root{
+    /* --background: #40868B; */
+    --background: #2F5B65;
 }
-body {
-  background: #eeeeee;
-  font-family: "Roboto", sans-serif;
-}
-.container {
-  max-width: 1000px;
-  background: #e4f9f5;
-  margin: 0 auto;
-  padding: 20px;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #11999e;
-}
-.profile {
-  width: 100px;
-  height: 120px;
-  border: 3px solid #fff;
-  border-radius: 50%;
-  float: left;
-}
-.header-bio {
-  float: left;
-  padding: 30px;
-}
-.clear {
-  clear: both;
-}
-hr {
-  width: 100%;
-  border: 3px solid black;
-  border-bottom: none;
-  margin: 20px auto;
-}
-.hr {
-  width: 100%;
-  border: 1px solid black;
-  border-bottom: none;
-  margin: 20px auto;
-}
-.contact {
-  float: right;
-  padding: 30px;
-}
-.contact ul {
-  list-style-type: none;
-}
-.contact ul li {
-}
-.contact ul li a {
-  text-decoration: none;
-  color: teal;
-  font-weight: bold;
-}
-.contact ul li a:hover {
-  text-decoration: underline;
-  color: tomato;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
 }
 
-/* personal information */
-.left {
-  width: 30%;
-  float: left;
-}
-.right {
-  width: 70%;
-  float: right;
+img{
+    width: 200px;
 }
 
-.right .left {
-  width: 50%;
-  float: left;
+.dotted-hr {
+    width: 9%;
+    margin: 30px auto;
+    border-bottom: 5px dotted #ffffff;
+    border-top: none;
 }
-.right .right {
-  width: 50%;
-  float: right;
+.solid-hr{
+    border-top: none;
+    border-bottom: 1px solid #ffffff;
+    margin: 20px 0;
 }
-footer {
-  background: #000;
-  padding: 10px;
+/* header area Start */
+
+.container{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
-footer .social {
-  width: 30%;
-  margin: -10px auto;
+#header-area{
+    display: flex;
+    flex-direction: column;
+    background: var(--background);
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    justify-content: center;
 }
-footer .social ul {
-  list-style-type: none;
-  margin-left: 20px;
-  box-sizing: border-box;
+#header-area .logo img{
+    margin-top: 3px;
+    width: 80px;
 }
-footer .social ul li {
-  float: left;
+
+#header-area .title{
+    margin: 19px 0 12px 0;
+    font-size: 1.2rem;
+    color: #ffffff;
 }
-footer .social ul li a {
-  display: inline-block;
-  margin: 18px 12px;
-  margin-right: 17px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
+#header-area .title h1{
+    margin: 12px 0 0px 0;
 }
-footer .copy p {
-  width: 100%;
-  color: #fff;
-  overflow: hidden;
-  text-align: center;
+#header-area #nav-menu{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    width: 85%;
+    margin: auto;
 }
+#header-area #nav-menu ul{
+    list-style: none;
+}
+#header-area #nav-menu ul li{
+    margin: 15px 0;
+    
+}
+#header-area #nav-menu ul li a{
+    display: block;
+    background: #042a2d;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
+#header-area #nav-menu ul li a:hover{
+    background: #290000;
+}
+/* header area End */
+
+/* main content Start */
+/* hero section Start */
+#main-content{
+    display: flex;
+    flex-direction: column;
+}
+#main-content #hero {
+    padding: 129px 40px;
+    text-align: center;
+}
+#main-content #hero .weather-top{
+    position: relative;
+}
+#main-content #hero .weather-top img {
+    width: 110px;
+    position: absolute;
+    top: -116px;
+    right: 0;
+    transition: 3s;
+}
+#main-content #hero .weather-top img:hover{
+    transform: rotate(360deg);
+}
+#main-content #hero h2{
+    width: 70%;
+    font-family: "Satisfy", cursive;
+    font-size: 3rem;
+    margin: auto;
+}
+#main-content #hero p{
+    color: #525252;
+    font-size: 1.3rem;
+    margin: 40px 0;
+}
+#main-content #hero .weather-bottom{
+    position: relative;
+}
+#main-content #hero .weather-bottom img {
+    width: 110px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    transition: 3s;
+}
+#main-content #hero .weather-bottom img:hover{
+    transform: rotate(360deg);
+}
+/* hero section End */
+
+/* about me section Start */
+#about-me{
+    display: flex;
+    flex-direction: column;
+    background: #1C575F;
+    text-align: center;
+    padding: 25px;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+#about-me h2{
+    text-transform: uppercase;
+}
+#about-me .about-me-left img{
+    width: 210px;
+    height: 210px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+#about-me .about-me-right .spacing {
+    margin-bottom: 15px;
+}
+
+#about-me .about-me-right a{
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+}
+#about-me .about-me-right a:nth-child(1n + 2){
+    display: inline-block;
+    background: #052D2F;
+    padding: 15px 20px;
+    margin: 30px 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 2px 2px 10px #ffffff;
+}
+/* about me section End */
+
+/* experience section Start */
+#experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#experience .card{
+    background: #A39E9E;
+    width: 98%;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+#experience .card:hover{
+    box-shadow: 0px 4px 8px 5px #000000;
+}
+#experience .card img{
+    width: 100px;
+    border: 5px solid #ffffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin-top: 20px;
+}
+#experience .card h2{
+    width: 100%;
+    background: #545454;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 10px 5px;
+    margin: 20px 0;
+}
+
+#experience .card ol{
+    padding-left: 35px;
+    text-align: left;
+}
+#experience .card ol h3{
+    font-size: 1.3rem;
+    color:#210e0e;
+    margin-bottom: 5px;
+}
+#experience .card ol p{
+    font-size: 0.9rem;
+    color: #1C0C0C;
+}
+
+#experience .card ul{
+    list-style: none;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 20px;
+}
+#experience .card ul li{
+    margin: 20px 50px;
+    position: relative;
+}
+#experience .card ul li::before{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: #7C7A9C;
+    border-radius: 5px;
+}
+#experience .card ul li::after{
+    content: '';
+    width: 0;
+    height: 10px;
+    background: #565699;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    border-radius: 5px;
+
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    /* animation-direction: alternate; */
+}
+#experience .card ul li.html::after{
+    animation-name: html;
+}
+
+@keyframes html{
+    to{
+        width: 90%;
+    }
+}
+
+#experience .card ul li.css::after{
+    animation-name: css;
+}
+
+@keyframes css{
+    to{
+        width: 90%;
+    }
+}
+#experience .card ul li.github::after{
+    animation-name: github;
+}
+
+@keyframes github{
+    to{
+        width: 0%;
+    }
+}
+#experience .card ul li.js::after{
+    animation-name: js;
+}
+
+@keyframes js{
+    to{
+        width: 0%;
+    }
+}
+#experience .card ul li.bs::after{
+    animation-name: bs;
+}
+
+@keyframes bs{
+    to{
+        width: 90%;
+    }
+}
+#experience .card ul li.jquery::after{
+    animation-name: jquery;
+}
+
+@keyframes jquery{
+    to{
+        width: 60%;
+    }
+}
+#experience .card ul li.react::after{
+    animation-name: react;
+}
+
+@keyframes react{
+    to{
+        width: 90%;
+    }
+}
+#experience .card ul li.next::after{
+    animation-name: next;
+}
+
+@keyframes next{
+    to{
+        width: 99%;
+    }
+}
+#experience .card ul li.node::after{
+    animation-name: node;
+}
+
+@keyframes node{
+    to{
+        width: 99%;
+    }
+}
+#experience .card ul li.ex::after{
+    animation-name: ex;
+}
+
+@keyframes ex{
+    to{
+        width: 99%;
+    }
+}
+#experience .card ul li.mdb::after{
+    animation-name: mdb;
+}
+
+@keyframes mdb{
+    to{
+        width: 99%;
+    }
+}
+/* experience section End */
+
+/* accessibility Start */
+
+/* ===============================
+   Accessibility Section
+================================ */
+
+#accessibility {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 32px 24px;
+  background-color: #f9fafb;
+  border-left: 6px solid #356d72;
+  border-radius: 12px;
+}
+
+#accessibility h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  color: #1f2933;
+}
+
+#accessibility p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #374151;
+  margin-bottom: 16px;
+}
+
+#accessibility ul {
+  margin: 24px 0;
+  padding-left: 20px;
+}
+
+#accessibility li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #1f2933;
+  position: relative;
+}
+
+#accessibility {
+    margin: 48px 16px;
+    padding: 24px 16px;
+  }
+
+  #accessibility h2 {
+    font-size: 1.6rem;
+  }
+/* accessibility End */
+
+/* achievements contact section Start */
+#achievements-contact{
+    display: flex;
+    flex-direction: column;
+    background: #0E292F;
+    padding: 25px 20px;
+    color: #ffffff;
+}
+#achievements-contact h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+#achievements-contact .achievements{
+    /* width: 85%; */
+    margin: 10px auto 20px;
+    padding: 0 50px 0;
+}
+#achievements-contact .achievements ol li{
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+#achievements-contact .contact{
+    /* width: 88%; */
+    margin: 20px auto 20px;
+    text-align: center;
+    padding: 0 50px 0;
+}
+#achievements-contact .contact input[type=text], #achievements-contact .contact input[type=email],#message{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+}
+#achievements-contact .contact input[type=submit],#achievements-contact .contact input[type=reset]{
+    text-align: center;
+    background: #125D5E;
+    color: #ffffff;
+    padding: 15px 30px;
+    margin: 10px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px #d26464;
+    transition: 0.5s;
+}
+#achievements-contact .contact input[type=submit]:hover,#achievements-contact .contact input[type=reset]:hover{
+    box-shadow: 0px 5px 10px #ffffff;
+}
+#achievements-contact .social-links{
+    text-align: center;
+}
+
+#achievements-contact .social-links .media-icon a{
+    display: inline-block;
+    color: #000;
+    background: #fff;
+    border-radius: 50px;
+    padding: 5px;
+    margin: 25px 10px 10px;
+    transition: 0.3s;
+}
+#achievements-contact .social-links .media-icon a:hover{
+    background: #808080;
+}
+#achievements-contact .social-links .media-icon a i{
+    font-size: 2rem;
+}
+#achievements-contact .social-links .media-icon .youtube{
+    color: #ff0000;
+}
+#achievements-contact .social-links .media-icon .facebook, #achievements-contact .social-links .media-icon .skype{
+    color: #1d1d92;
+}
+#achievements-contact .social-links .media-icon .earth-africa{
+    color: #0a8379;
+}
+#achievements-contact .social-links .media-icon .skype{
+    color: #1d1d92;
+}
+#achievements-contact .social-links .media-icon .linkedin-in{
+    color: #1d1d92;
+}
+/* achievements contact section End */
+
+/* main content End */
+
+/* footer area Start */
+#footer-area{
+    width: 100%;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+}
+#footer-area .nav-menu ul{
+    list-style: none;
+}
+#footer-area .nav-menu ul li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    transition: 0.5s;
+}
+#footer-area .nav-menu ul li a:hover{
+    color: #808080;
+}
+#footer-area .copyright p{
+    font-size: 0.9rem;
+    margin-top: 50px;
+}
+#footer-area .copyright p .love{
+    color: #ff0101;
+    font-size: 1.1rem;
+}
+/* footer area End */
