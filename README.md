@@ -13,7 +13,6 @@ HTML, CSS, and JavaScript.
 ## Technologies Used
 - HTML5
 - CSS3
-- JavaScript
 
 ## Accessibility
 This project follows accessibility best practices including
