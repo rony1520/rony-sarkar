@@ -19,4 +19,4 @@ This project follows accessibility best practices including
 proper contrast ratios, ARIA labels, and focus-visible styles.
 
 ## Live Preview
-(Coming soon)
+https://rony1520.github.io/rony-sarkar
